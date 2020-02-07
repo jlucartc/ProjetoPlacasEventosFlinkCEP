@@ -1,13 +1,33 @@
 [0m[[0m[0mdebug[0m] [0m[0mPackaging /home/luca/ProjetoPlacasEventosFlinkCEP/target/scala-2.12/projetoplacaseventosflinkcep_2.12-0.1.jar ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Pipeline$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/luca/ProjetoPlacasEventosFlinkCEP/target/scala-2.12/classes/Pipeline$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Pipeline$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/luca/ProjetoPlacasEventosFlinkCEP/target/scala-2.12/classes/Pipeline$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	teste.sc[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/luca/ProjetoPlacasEventosFlinkCEP/target/scala-2.12/classes/teste.sc[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Main$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/luca/ProjetoPlacasEventosFlinkCEP/target/scala-2.12/classes/Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	PlacasPeriodicTimestampAssigner.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/luca/ProjetoPlacasEventosFlinkCEP/target/scala-2.12/classes/PlacasPeriodicTimestampAssigner.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Pipeline$$anon$3$$anon$4.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/luca/ProjetoPlacasEventosFlinkCEP/target/scala-2.12/classes/Pipeline$$anon$3$$anon$4.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Pipeline$$anon$3.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/luca/ProjetoPlacasEventosFlinkCEP/target/scala-2.12/classes/Pipeline$$anon$3.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	PlacasPunctualTimestampAssigner.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/luca/ProjetoPlacasEventosFlinkCEP/target/scala-2.12/classes/PlacasPunctualTimestampAssigner.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	ProdutorPlacas.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/luca/ProjetoPlacasEventosFlinkCEP/target/scala-2.12/classes/ProdutorPlacas.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RemoveLateDataProcessFunction.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/luca/ProjetoPlacasEventosFlinkCEP/target/scala-2.12/classes/RemoveLateDataProcessFunction.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Pipeline.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/luca/ProjetoPlacasEventosFlinkCEP/target/scala-2.12/classes/Pipeline.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	S2TMapFunction.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/luca/ProjetoPlacasEventosFlinkCEP/target/scala-2.12/classes/S2TMapFunction.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	META-INF[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/luca/ProjetoPlacasEventosFlinkCEP/target/scala-2.12/classes/META-INF[0m
+[0m[[0m[0mdebug[0m] [0m[0m	META-INF/ProjetoPlacasEventosFlinkCEP.kotlin_module[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/luca/ProjetoPlacasEventosFlinkCEP/target/scala-2.12/classes/META-INF/ProjetoPlacasEventosFlinkCEP.kotlin_module[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Main.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/luca/ProjetoPlacasEventosFlinkCEP/target/scala-2.12/classes/Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Pipeline$$anon$1$$anon$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/luca/ProjetoPlacasEventosFlinkCEP/target/scala-2.12/classes/Pipeline$$anon$1$$anon$2.class[0m
 [0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

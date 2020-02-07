@@ -11,7 +11,7 @@ class ProdutorPlacas extends Thread {
 
     override def run(): Unit ={
         
-        publicarPlacas(5000)
+        publicarPlacas(10000)
         
     }
     
@@ -27,13 +27,14 @@ class ProdutorPlacas extends Thread {
             props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer")
             props.put("acks", "1")
     
-            var placa = RandomStringUtils.random(8)
+            var placa = RandomStringUtils.randomAlphabetic(8)
     
             val rangebegin = Timestamp.valueOf("2013-02-08 00:00:00").getTime
-            val rangeend = Timestamp.valueOf("2013-02-08 00:58:00").getTime
-            val diff = rangeend - rangebegin + 1
-            val timestamp = new Timestamp(rangebegin + (Math.random * diff).toLong)
-    
+            //val rangeend = Timestamp.valueOf("2013-02-08 00:58:00").getTime
+            //val diff = rangeend - rangebegin + 1
+            //val timestamp = new Timestamp(rangebegin + (Math.random * diff).toLong)
+            val timestamp = new Timestamp(rangebegin + 10000*counter)
+            
             val rand = new Random()
             val posLatMin = -3.78
             val posLatMax = -3.72
