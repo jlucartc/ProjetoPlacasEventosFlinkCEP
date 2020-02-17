@@ -52,4 +52,7 @@ libraryDependencies += "org.apache.flink" %% "flink-table-planner-blink" % "1.9.
 // https://mvnrepository.com/artifact/org.apache.flink/flink-table-runtime-blink
 libraryDependencies += "org.apache.flink" %% "flink-table-runtime-blink" % "1.9.0"
 
-// --- Flink Table API ---
+// --- END ---
+
+// https://mvnrepository.com/artifact/com.github.mauricio/postgresql-async
+libraryDependencies += "com.github.mauricio" %% "postgresql-async" % "0.2.21"

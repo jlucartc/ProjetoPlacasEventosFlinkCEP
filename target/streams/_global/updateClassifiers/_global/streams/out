@@ -1,4 +1,3 @@
-[warn] flink-cep_2.12-1.9.0-sources.jar no longer exists at /home/luca/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-cep_2.12/1.9.0/flink-cep_2.12-1.9.0-sources.jar
-[debug] "not up to date. inChanged = false, force = false
+[debug] "not up to date. inChanged = true, force = false
 [debug] Updating ProjectRef(uri("file:/home/luca/ProjetoPlacasEventosFlinkCEP/"), "projetoplacaseventosflinkcep")...
 [debug] Done updating ProjectRef(uri("file:/home/luca/ProjetoPlacasEventosFlinkCEP/"), "projetoplacaseventosflinkcep")

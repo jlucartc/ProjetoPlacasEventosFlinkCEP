@@ -2,13 +2,14 @@ import java.sql.Timestamp
 import java.util.Properties
 import java.util.concurrent.TimeUnit
 
+import com.github.mauricio.async.db.{QueryResult, ResultSet}
 import org.apache.flink.api.scala._
 import org.apache.flink.api.common.serialization.SimpleStringSchema
 import org.apache.flink.api.common.typeinfo.{TypeInformation, Types}
 import org.apache.flink.api.java.io.jdbc.{JDBCAppendTableSink, JDBCOptions, JDBCTableSource}
 import org.apache.flink.core.fs.FileSystem
 import org.apache.flink.streaming.api.TimeCharacteristic
-import org.apache.flink.streaming.api.scala.{DataStream, StreamExecutionEnvironment}
+import org.apache.flink.streaming.api.scala.{AsyncDataStream, DataStream, StreamExecutionEnvironment}
 import org.apache.flink.streaming.api.windowing.assigners.TumblingEventTimeWindows
 import org.apache.flink.streaming.api.windowing.time.Time
 import org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumer
@@ -19,38 +20,54 @@ import org.postgresql.Driver
 
 class Pipeline() {
 
-    /* Testando JDBCTableSource */
+    /* 1.0 : Testando JDBCTableSource */
 
-        val jdbcEnv = StreamExecutionEnvironment.getExecutionEnvironment
-        jdbcEnv.setParallelism(1)
+        //val jdbcEnv = StreamExecutionEnvironment.getExecutionEnvironment
+        //jdbcEnv.setParallelism(1)
 
-        val settings = EnvironmentSettings.newInstance().useBlinkPlanner().inStreamingMode().build()
-        val tableEnv = StreamTableEnvironment.create(jdbcEnv,settings)
+        //val settings = EnvironmentSettings.newInstance().useBlinkPlanner().inStreamingMode().build()
+        //val tableEnv = StreamTableEnvironment.create(jdbcEnv,settings)
 
-        val jdbcOptions = JDBCOptions.builder()
-          .setDriverName("org.postgresql.Driver")
-          .setDBUrl("jdbc:postgresql://localhost:5432/mydb")
-          .setUsername("luca")
-          .setPassword("root")
-          .setTableName("example")
-          .build()
+        //val jdbcOptions = JDBCOptions.builder()
+        //  .setDriverName("org.postgresql.Driver")
+        //  .setDBUrl("jdbc:postgresql://localhost:5432/mydb")
+        //  .setUsername("luca")
+        //  .setPassword("root")
+        //  .setTableName("example")
+        //  .build()
 
-        val jdbcSchema = TableSchema.builder()
-          .field("name",DataTypes.STRING())
-          .build()
+        //val jdbcSchema = TableSchema.builder()
+        //  .field("name",DataTypes.STRING())
+        //  .build()
 
-        val jdbcsource = JDBCTableSource.builder().setOptions(jdbcOptions).setSchema(jdbcSchema).build()
+        //val jdbcsource = JDBCTableSource.builder().setOptions(jdbcOptions).setSchema(jdbcSchema).build()
 
-        tableEnv.registerTableSource("jdbc_table_source",jdbcsource)
+        //tableEnv.registerTableSource("jdbc_table_source",jdbcsource)
 
-        val outputDataStream = tableEnv.toAppendStream[Row](tableEnv.sqlQuery("SELECT * FROM jdbc_table_source"))
+        //val outputDataStream = tableEnv.toAppendStream[Row](tableEnv.sqlQuery("SELECT * FROM jdbc_table_source"))
 
-        outputDataStream.writeAsText("/home/luca/Desktop/jdbcoutput",FileSystem.WriteMode.OVERWRITE)
+        //outputDataStream.writeAsText("/home/luca/Desktop/jdbcoutput",FileSystem.WriteMode.OVERWRITE)
 
-        jdbcEnv.execute()
+        //jdbcEnv.execute()
 
-    /* Testando JDBCTableSource - FIM */
+    /* --- 1.0 FIM ---*/
 
+    /* 2.0 : Testando conexão com BD através de Async I/O  - Funcionou */
+    
+        //var asyncEnv = StreamExecutionEnvironment.getExecutionEnvironment
+        
+        //asyncEnv.setParallelism(1)
+    
+        //var asyncStream : DataStream[String] = asyncEnv.readTextFile("/home/luca/Desktop/inputData").name("Async stream")
+    
+        //var afterAsyncFunctionStream : DataStream[String] = AsyncDataStream.unorderedWait(asyncStream,new AsyncPostgresFunction(), 500, TimeUnit.MILLISECONDS, 100)
+    
+        //afterAsyncFunctionStream.writeAsText("/home/luca/Desktop/asyncIOoutput",FileSystem.WriteMode.OVERWRITE)
+    
+        //asyncEnv.execute()
+    
+    /* FIM */
+    
     var env = StreamExecutionEnvironment.getExecutionEnvironment
     env.setStreamTimeCharacteristic(TimeCharacteristic.EventTime)
     env.setParallelism(1)
@@ -71,6 +88,12 @@ class Pipeline() {
     var earlyDataStream = tupleStream.assignTimestampsAndWatermarks(new PlacasPeriodicTimestampAssigner())
     .process(new RemoveLateDataProcessFunction())
     
+    /* A partir daqui, haverá um pipeline para cada tipo de evento */
+    
+    var afterAsyncFunctionStream : DataStream[String] = AsyncDataStream.unorderedWait(earlyDataStream,new AsyncPostgresFunction(), 500, TimeUnit.MILLISECONDS, 100)
+    
+    afterAsyncFunctionStream.writeAsText("/home/luca/Desktop/asyncIOoutput",FileSystem.WriteMode.OVERWRITE)
+    
     /*  Vou aplicar um map/reduce nos dados do stream.
     *   Primeiro eu checo na função se o dado foi emitido em menos de 10s de acordo com o tempo atual.
     *   Caso o dado obedeça a esse critério, então eu o substituo por um evento que irá para um tópico Kafka,
@@ -87,7 +110,7 @@ class Pipeline() {
     * */
 
 
-    //val res = env.execute()
-    //println("Execution time: ",res.getNetRuntime(TimeUnit.MILLISECONDS))
+    val res = env.execute()
+    println("Execution time: ",res.getNetRuntime(TimeUnit.MILLISECONDS))
     
 }
