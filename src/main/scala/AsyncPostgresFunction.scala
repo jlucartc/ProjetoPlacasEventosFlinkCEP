@@ -21,26 +21,33 @@ class AsyncPostgresFunction extends AsyncFunction[(String,String,Double,Double),
         
         Await.result(connection.connect,duration.milliseconds)
         
-        val future  : Future[QueryResult] = connection.sendQuery("SELECT * FROM areas WHERE poligono @> point("+input._3+","+input._4+") OR circulo @> point("+input._3+","+input._4+")")
+        val future : Future[QueryResult] = connection.sendQuery("SELECT * FROM areas")
+        
+        //val future  : Future[QueryResult] = connection.sendQuery("SELECT * FROM areas WHERE ( tipo = 'poligono' AND ST_ContainsProperly(poligono::geometry,ST_GeographyFromText('point("+input._3.toString+" "+input._4.toString+")')::geometry)) OR ( tipo = 'circulo' AND ST_Distance(centro,ST_GeographyFromText('point("+input._3.toString+" "+input._4.toString+")')) <= raio )")
         
         val mapResult: Future[Any] = future.map(queryResult => queryResult.rows match {
             case Some(resultSet) => {
                 val row : RowData = resultSet.head
                 
+                println("\n\nresultSetLength: "+resultSet.length.toString+"\n\n")
+                
                 if(resultSet.length > 0){
                 
-                    resultFuture.complete(Iterable("Evento"))
+                    resultFuture.complete(Iterable("Evento: ("+input._3.toString+","+input._4.toString+")"))
                     
                 }else{
                 
-                    resultFuture.complete(Iterable("Não é evento"))
+                    resultFuture.complete(Iterable("Não é evento: ("+input._3.toString+","+input._4.toString+")"))
                     
                 }
                 
                 connection.disconnect
                 row
             }
-            case None => -1
+            
+            case None => {resultFuture.complete(Iterable("NULL")) ; println("\n\nNULL\n\n"); connection.disconnect}
+
+            case default => { connection.disconnect }
         }
         )
         

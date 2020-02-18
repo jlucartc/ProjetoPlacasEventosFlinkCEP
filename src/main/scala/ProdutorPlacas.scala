@@ -36,10 +36,10 @@ class ProdutorPlacas extends Thread {
             val timestamp = new Timestamp(rangebegin + 10000*counter)
             
             val rand = new Random()
-            val posLatMin = -3.78
-            val posLatMax = -3.72
-            val posLngMin = -38.59
-            val posLngMax = -38.49
+            val posLatMin = 0.00001
+            val posLatMax = 0.05
+            val posLngMin = 0.0001
+            val posLngMax = 0.01
             val posicao = Array((rand.nextFloat() * (posLatMax - posLatMin)) + posLatMin, (rand.nextFloat() * (posLngMax - posLngMin)) + posLngMin)
             val dados = Array(placa, timestamp, posicao.mkString("(",",",")"))
     

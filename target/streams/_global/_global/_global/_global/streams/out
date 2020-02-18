@@ -1,5 +1,3 @@
 [0m[[0m[0mdebug[0m] [0m[0m[watch] [projetoplacaseventosflinkcep / Compile / run] Found inputs: /home/luca/ProjetoPlacasEventosFlinkCEP/*.{java,scala},/home/luca/ProjetoPlacasEventosFlinkCEP/src/main/java/**/*.{java,scala},/home/luca/ProjetoPlacasEventosFlinkCEP/src/main/resources/**/*,/home/luca/ProjetoPlacasEventosFlinkCEP/src/main/scala/**/*.{java,scala},/home/luca/ProjetoPlacasEventosFlinkCEP/src/main/scala-2.12/**/*.{java,scala}[0m
 [0m[[0m[0minfo[0m] [0m[0m1. Monitoring source files for projetoplacaseventosflinkcep/run...[0m
 [0m[[0m[0minfo[0m] [0m[0m   Press <enter> to interrupt or '?' for more options.[0m
-[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received input event: Run().[0m
-[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received input event: Run().[0m
