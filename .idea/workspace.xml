@@ -2,16 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f25b65b-a87b-4e34-a71b-eb35f279061c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/AcceptAllFunction.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/MyPatternProcessFunction.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/MySimpleCondition.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/SameRegionFunction.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/AsyncPostgresFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/AsyncPostgresFunction.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Main.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/Pipeline.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Pipeline.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/PipelinePostgresQuery.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/PipelinePostgresQuery.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/ProdutorPlacas.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/ProdutorPlacas.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/AsyncPostgresFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/AsyncPostgresFunction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/S2TMapFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/S2TMapFunction.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/Main$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/Main$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/Pipeline$$anon$1$$anon$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/Pipeline$$anon$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/Pipeline$$anon$3$$anon$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/Pipeline$$anon$3.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/Pipeline.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/Pipeline.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ProdutorPlacas.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ProdutorPlacas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/S2TMapFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/S2TMapFunction.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/projetoplacaseventosflinkcep_2.12-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/projetoplacaseventosflinkcep_2.12-0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/_global/_global/_global/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/_global/_global/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileOutputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileOutputs/previous" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileSourceFileInputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileSourceFileInputs/previous" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/_global/streams/inc_compile_2.12.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/_global/streams/inc_compile_2.12.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/export" afterDir="false" />
@@ -134,18 +144,18 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="588" y="214" width="847" height="677" key="#Project_Structure/67.27.1853.1053@67.27.1853.1053" timestamp="1581013308535" />
-    <state x="726" y="310" width="524" height="484" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1581952995749">
+    <state x="726" y="310" width="524" height="484" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1582128019045">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="726" y="310" width="524" height="484" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1581952995749" />
+    <state x="726" y="310" width="524" height="484" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1582128019045" />
     <state x="174" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581890378483">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="174" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1299.741@67.27.1299.741" timestamp="1581890378483" />
-    <state x="801" y="253" width="374" height="599" key="#com.intellij.ide.util.MemberChooser" timestamp="1582042026696">
+    <state x="801" y="253" width="368" height="599" key="#com.intellij.ide.util.MemberChooser" timestamp="1582137514657">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="801" y="253" width="374" height="599" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1582042026696" />
+    <state x="801" y="253" width="368" height="599" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1582137514657" />
     <state x="372" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1581686398548">
       <screen x="67" y="27" width="1299" height="741" />
     </state>

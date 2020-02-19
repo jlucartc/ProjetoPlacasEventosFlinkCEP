@@ -3,15 +3,14 @@ import java.sql.Timestamp
 import org.apache.flink.api.common.functions.MapFunction
 
 
-class S2TMapFunction extends MapFunction[String,(String,String,Double,Double)]{
+class S2TMapFunction extends MapFunction[String,(String,Double,Double,String,Int,Int)]{
     
-    override def map(value: String): (String,String,Double,Double) = {
+    override def map(value: String): (String,Double,Double,String,Int,Int) = {
     
-        val tuple = value.substring(1,value.length-1).split(',')
-        val coords = Array(tuple(2).replaceAllLiterally("(",""),tuple(3).replaceAllLiterally(")",""))
+        val tuple = value.split(',')
+        val coords = Array(tuple(1),tuple(2))
         
-        (tuple(0),tuple(1),coords(0).toDouble,coords(1).toDouble)
-        
+        (tuple(0),coords(0).toDouble,coords(1).toDouble,tuple(3),tuple(4).toInt,tuple(5).toInt)
         
         
     }

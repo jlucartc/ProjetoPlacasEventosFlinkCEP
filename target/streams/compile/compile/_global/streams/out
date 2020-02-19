@@ -1,15 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/home/luca/ProjetoPlacasEventosFlinkCEP/src/main/scala/Pipeline.scala:93:87: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : org.apache.flink.streaming.api.scala.DataStream[(String, String, Double, Double)][0m
-[0m[[0m[31merror[0m] [0m[0m required: org.apache.flink.streaming.api.scala.DataStream[java.io.Serializable][0m
-[0m[[0m[31merror[0m] [0m[0mNote: (String, String, Double, Double) <: java.io.Serializable, but class DataStream is invariant in type T.[0m
-[0m[[0m[31merror[0m] [0m[0mYou may wish to define T as +T instead. (SLS 4.5)[0m
-[0m[[0m[31merror[0m] [0m[0m    var afterAsyncFunctionStream : DataStream[String] = AsyncDataStream.unorderedWait(earlyDataStream,new AsyncPostgresFunction(), 500, TimeUnit.MILLISECONDS, 100)[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                                      ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/luca/ProjetoPlacasEventosFlinkCEP/src/main/scala/Pipeline.scala:93:103: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : AsyncPostgresFunction[0m
-[0m[[0m[31merror[0m] [0m[0m required: org.apache.flink.streaming.api.scala.async.AsyncFunction[java.io.Serializable,String][0m
-[0m[[0m[31merror[0m] [0m[0mNote: String <: java.io.Serializable (and AsyncPostgresFunction <: org.apache.flink.streaming.api.scala.async.AsyncFunction[String,String]), but trait AsyncFunction is invariant in type IN.[0m
-[0m[[0m[31merror[0m] [0m[0mYou may wish to define IN as +IN instead. (SLS 4.5)[0m
-[0m[[0m[31merror[0m] [0m[0m    var afterAsyncFunctionStream : DataStream[String] = AsyncDataStream.unorderedWait(earlyDataStream,new AsyncPostgresFunction(), 500, TimeUnit.MILLISECONDS, 100)[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                                                      ^[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/luca/ProjetoPlacasEventosFlinkCEP/src/main/scala/MyPatternProcessFunction.scala:10:76: ';' expected but ',' found.[0m
+[0m[[0m[31merror[0m] [0m[0m        events.get("follow").forEach( value => { println("Follow event..."), out.collect("Emitindo evento 'Hello'..."); })[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

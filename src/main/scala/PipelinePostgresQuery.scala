@@ -67,7 +67,7 @@ class PipelinePostgresQuery() {
         //asyncEnv.execute()
     
     /* FIM */
-    
+  /*
     var env = StreamExecutionEnvironment.getExecutionEnvironment
     env.setStreamTimeCharacteristic(TimeCharacteristic.EventTime)
     env.setParallelism(1)
@@ -96,7 +96,7 @@ class PipelinePostgresQuery() {
     //stream.writeAsText("/home/luca/Desktop/asyncIOoutput",FileSystem.WriteMode.OVERWRITE)
     
     afterAsyncFunctionStream.writeAsText("/home/luca/Desktop/asyncIOoutput",FileSystem.WriteMode.OVERWRITE)
-    
+    */
     /*  Vou aplicar um map/reduce nos dados do stream.
     *   Primeiro eu checo na função se o dado foi emitido em menos de 10s de acordo com o tempo atual.
     *   Caso o dado obedeça a esse critério, então eu o substituo por um evento que irá para um tópico Kafka,
@@ -113,7 +113,7 @@ class PipelinePostgresQuery() {
     * */
 
 
-    val res = env.execute()
-    println("Execution time: ",res.getNetRuntime(TimeUnit.MILLISECONDS))
+/*    val res = env.execute()
+    println("Execution time: ",res.getNetRuntime(TimeUnit.MILLISECONDS))*/
     
 }
