@@ -18,6 +18,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/luca/ProjetoPlacasEventosFlinkCEP/target/scala-2.12/classes/ProdutorPlacas.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	RemoveLateDataProcessFunction.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/luca/ProjetoPlacasEventosFlinkCEP/target/scala-2.12/classes/RemoveLateDataProcessFunction.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MyEventComparator.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/luca/ProjetoPlacasEventosFlinkCEP/target/scala-2.12/classes/MyEventComparator.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	MyPatternProcessFunction.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/luca/ProjetoPlacasEventosFlinkCEP/target/scala-2.12/classes/MyPatternProcessFunction.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	AcceptAllFunction.class[0m

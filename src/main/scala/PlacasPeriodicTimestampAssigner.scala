@@ -4,7 +4,7 @@ import java.text.SimpleDateFormat
 import org.apache.flink.streaming.api.functions.AssignerWithPeriodicWatermarks
 import org.apache.flink.streaming.api.watermark.Watermark
 
-class PlacasPeriodicTimestampAssigner extends AssignerWithPeriodicWatermarks[(String,String,Double,Double)]{
+class PlacasPeriodicTimestampAssigner extends AssignerWithPeriodicWatermarks[(String,Double,Double,String,Int,Int)]{
    
     // Limite de atraso - 10000 ms
     private var limite = 10000
@@ -20,10 +20,10 @@ class PlacasPeriodicTimestampAssigner extends AssignerWithPeriodicWatermarks[(St
         
     }
     
-    override def extractTimestamp(element: (String, String, Double, Double), previousElementTimestamp: Long): Long = {
+    override def extractTimestamp(element: (String,Double,Double,String,Int,Int), previousElementTimestamp: Long): Long = {
         
         val formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
-        val date = formatter.parse(element._2)
+        val date = formatter.parse(element._4)
         val timestampAtual = new Timestamp(date.getTime).getTime
         timestampMaisRecente = Math.max(timestampMaisRecente,timestampAtual)
         

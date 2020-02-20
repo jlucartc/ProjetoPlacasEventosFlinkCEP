@@ -12,11 +12,11 @@ Informações do payload: placa, posicao, timestamp, cidade, regiao
 */
 
 
-class ProdutorPlacas extends Thread {
+class ProdutorPlacas(val q : Int) extends Thread {
 
     override def run(): Unit ={
         
-        publicarPlacas(10000)
+        publicarPlacas(this.q)
         
     }
     

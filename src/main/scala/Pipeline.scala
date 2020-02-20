@@ -14,9 +14,9 @@ import org.apache.flink.streaming.api.windowing.time.Time
 class Pipeline {
     
     var env = StreamExecutionEnvironment.getExecutionEnvironment
-    env.setStreamTimeCharacteristic(TimeCharacteristic.ProcessingTime)
+    env.setStreamTimeCharacteristic(TimeCharacteristic.EventTime)
     env.setParallelism(1)
-    env.getConfig.setAutoWatermarkInterval(2000)
+    //env.getConfig.setAutoWatermarkInterval(1)
     
     var props : Properties = new Properties()
     
@@ -26,18 +26,23 @@ class Pipeline {
     props.setProperty("auto.offset.reset", "earliest")
     props.setProperty("enable.auto.commit","false")
     
-    //var stream : DataStream[String] = env.readTextFile("/home/luca/Desktop/input").name("Stream original")
-    var stream : DataStream[String] = env.addSource(new FlinkKafkaConsumer[String]("placas",new SimpleStringSchema(),props))
+    var stream : DataStream[String] = env.readTextFile("/home/luca/Desktop/input").name("Stream original")
+    //var stream : DataStream[String] = env.addSource(new FlinkKafkaConsumer[String]("placas",new SimpleStringSchema(),props))
     
     var tupleStream = stream.map(new S2TMapFunction())
+    tupleStream.assignTimestampsAndWatermarks(new PlacasPunctualTimestampAssigner())
     
-    val pattern = Pattern.begin[(String,Double,Double,String,Int,Int)]("all").where(new AcceptAllFunction()).followedBy("follow").where(new SameRegionFunction()).within(Time.minutes(1))
+    //val pattern = Pattern.begin[(String,Double,Double,String,Int,Int)]("all").where(new AcceptAllFunction()).next("follow").where(new SameRegionFunction())//.within(Time.minutes(1))
     
-    val patternStream = CEP.pattern(tupleStream,pattern)
+    val pattern = Pattern.begin[(String,Double,Double,String,Int,Int)]("follow").where(new SameRegionFunction())//.within(Time.minutes(1))
+    
+    /*Criar EventComparator*/
+    
+    val patternStream = CEP.pattern(tupleStream,pattern, new MyEventComparator())
     
     val result = patternStream.process(new MyPatternProcessFunction())
     
-    stream.writeAsText("/home/luca/Desktop/input",FileSystem.WriteMode.OVERWRITE)
+    //tupleStream.writeAsText("/home/luca/Desktop/input",FileSystem.WriteMode.OVERWRITE)
     result.writeAsText("/home/luca/Desktop/output",FileSystem.WriteMode.OVERWRITE)
     
     env.execute()
