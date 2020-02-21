@@ -30,15 +30,12 @@ class Pipeline {
     //var stream : DataStream[String] = env.addSource(new FlinkKafkaConsumer[String]("placas",new SimpleStringSchema(),props))
     
     var tupleStream = stream.map(new S2TMapFunction())
-    tupleStream.assignTimestampsAndWatermarks(new PlacasPunctualTimestampAssigner())
-    
-    //val pattern = Pattern.begin[(String,Double,Double,String,Int,Int)]("all").where(new AcceptAllFunction()).next("follow").where(new SameRegionFunction())//.within(Time.minutes(1))
-    
-    val pattern = Pattern.begin[(String,Double,Double,String,Int,Int)]("follow").where(new SameRegionFunction())//.within(Time.minutes(1))
+    var newTupleStream = tupleStream.assignTimestampsAndWatermarks(new PlacasPunctualTimestampAssigner()).process(new RemoveLateDataProcessFunction())
+    val pattern = Pattern.begin[(String,Double,Double,String,Int,Int)]("follow").where(new SameRegionFunction()).within(Time.minutes(1))
     
     /*Criar EventComparator*/
     
-    val patternStream = CEP.pattern(tupleStream,pattern, new MyEventComparator())
+    val patternStream = CEP.pattern(newTupleStream,pattern)
     
     val result = patternStream.process(new MyPatternProcessFunction())
     

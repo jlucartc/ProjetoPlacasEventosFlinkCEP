@@ -7,7 +7,7 @@ import org.apache.flink.streaming.api.watermark.Watermark
 class PlacasPunctualTimestampAssigner extends AssignerWithPunctuatedWatermarks[(String,Double,Double,String,Int,Int)]{
     
     var counter : Int = 0
-    var eventsUntilNextWatermark : Int = 1
+    var eventsUntilNextWatermark : Int = 0
     var lastTimestamp : Long = _
     
     override def checkAndGetNextWatermark(lastElement: (String, Double, Double, String, Int, Int), extractedTimestamp: Long): Watermark = {
@@ -36,7 +36,7 @@ class PlacasPunctualTimestampAssigner extends AssignerWithPunctuatedWatermarks[(
         val timestampAtual = new Timestamp(date.getTime).getTime
         lastTimestamp = Math.max(lastTimestamp,timestampAtual)
         
-        counter = counter + 1
+        //counter = counter + 1
         
         timestampAtual
     

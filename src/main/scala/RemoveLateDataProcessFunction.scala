@@ -1,11 +1,17 @@
+import java.sql.Timestamp
+
 import org.apache.flink.streaming.api.functions.ProcessFunction
 import org.apache.flink.util.Collector
 
-class RemoveLateDataProcessFunction extends ProcessFunction[(String,String,Double,Double),(String,String,Double,Double)]{
+class RemoveLateDataProcessFunction extends ProcessFunction[(String,Double, Double,String,Int,Int),(String,Double, Double,String,Int,Int)]{
     
-    override def processElement(value: (String, String, Double, Double), ctx: ProcessFunction[(String, String, Double, Double), (String, String, Double, Double)]#Context, out: Collector[(String, String, Double, Double)]): Unit = {
+    override def processElement(value: (String,Double, Double,String,Int,Int), ctx: ProcessFunction[(String,Double, Double,String,Int,Int), (String,Double, Double,String,Int,Int)]#Context, out: Collector[(String,Double, Double,String,Int,Int)]): Unit = {
     
         val watermark = ctx.timerService().currentWatermark()
+        
+        println((ctx.timestamp() < watermark).toString)
+        val t = new Timestamp(ctx.timestamp())
+        println(t.toString)
         
         if(ctx.timestamp() < watermark){
             

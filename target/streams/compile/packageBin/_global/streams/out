@@ -14,6 +14,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/luca/ProjetoPlacasEventosFlinkCEP/target/scala-2.12/classes/PlacasPeriodicTimestampAssigner.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	PlacasPunctualTimestampAssigner.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/luca/ProjetoPlacasEventosFlinkCEP/target/scala-2.12/classes/PlacasPunctualTimestampAssigner.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	DoNothingMapFunction.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/luca/ProjetoPlacasEventosFlinkCEP/target/scala-2.12/classes/DoNothingMapFunction.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	ProdutorPlacas.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/luca/ProjetoPlacasEventosFlinkCEP/target/scala-2.12/classes/ProdutorPlacas.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	RemoveLateDataProcessFunction.class[0m
