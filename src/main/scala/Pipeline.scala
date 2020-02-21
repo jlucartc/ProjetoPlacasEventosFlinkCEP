@@ -29,9 +29,9 @@ class Pipeline {
     var stream : DataStream[String] = env.readTextFile("/home/luca/Desktop/input").name("Stream original")
     //var stream : DataStream[String] = env.addSource(new FlinkKafkaConsumer[String]("placas",new SimpleStringSchema(),props))
     
-    var tupleStream = stream.map(new S2TMapFunction())
-    var newTupleStream = tupleStream.assignTimestampsAndWatermarks(new PlacasPunctualTimestampAssigner()).process(new RemoveLateDataProcessFunction())
-    val pattern = Pattern.begin[(String,Double,Double,String,Int,Int)]("follow").where(new SameRegionFunction()).within(Time.minutes(1))
+    var tupleStream = stream.map(new S2TMapFunction()).keyBy(new TupleKeySelector())
+    var newTupleStream : DataStream[(String,Double,Double,String,Int,Int)] = tupleStream.assignTimestampsAndWatermarks(new PlacasPunctualTimestampAssigner()).process(new RemoveLateDataProcessFunction())
+    val pattern = Pattern.begin[(String,Double,Double,String,Int,Int)]("follow").where(new SameRegionFunction()).within(Time.minutes(10))
     
     /*Criar EventComparator*/
     
