@@ -1,6 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/home/luca/ProjetoPlacasEventosFlinkCEP/src/main/scala/TupleKeySelector.scala:7:15: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : Int[0m
-[0m[[0m[31merror[0m] [0m[0m required: String[0m
-[0m[[0m[31merror[0m] [0m[0m        value._6[0m
-[0m[[0m[31merror[0m] [0m[0m              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/luca/ProjetoPlacasEventosFlinkCEP/src/main/scala/CalculateSpeedFunction.scala:26:163: ';' expected but ')' found.[0m
+[0m[[0m[31merror[0m] [0m[0m                    println("Distancia suspeita: "+(((distance(res._1,value._2,res._2,value._3,0,0))/1000)/((timestampAtual - timestampAntigo)/3600000)).toString))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                                                                                  ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

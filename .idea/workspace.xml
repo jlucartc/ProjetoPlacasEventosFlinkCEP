@@ -2,14 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f25b65b-a87b-4e34-a71b-eb35f279061c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/TupleKeySelector.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Evento1ConditionFunction.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Evento2ConditionFunction.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Evento2PatternProcessFunction.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Evento3ConditionFunction.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Evento3PatternProcessFunction.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/AcceptAllFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/AcceptAllFunction.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/MyPatternProcessFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/MyPatternProcessFunction.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/IsInsideAreaEventProcessFunction.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/MyEventComparator.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/MyPatternProcessFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Evento1PatternProcessFunction.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/MySimpleCondition.scala" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/Pipeline.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Pipeline.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/RemoveLateDataProcessFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/RemoveLateDataProcessFunction.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/SameRegionFunction.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/teste.sc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/IsInsideAreaEventProcessFunction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/MyEventComparator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/MyPatternProcessFunction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/MySimpleCondition.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/Pipeline.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/Pipeline.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/RemoveLateDataProcessFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/RemoveLateDataProcessFunction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/SameRegionFunction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/teste.sc" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/projetoplacaseventosflinkcep_2.12-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/projetoplacaseventosflinkcep_2.12-0.1.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileOutputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileOutputs/previous" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileSourceFileInputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileSourceFileInputs/previous" afterDir="false" />
@@ -97,11 +109,11 @@
     </option>
     <option name="projectSyncType">
       <map>
-        <entry key="$USER_HOME$/Desktop/FlinkCEP" value="PREVIEW" />
-        <entry key="$USER_HOME$/KafkaOnibusProducer" value="PREVIEW" />
-        <entry key="$USER_HOME$/OnibusFlink" value="PREVIEW" />
-        <entry key="$USER_HOME$/PlacasFlink" value="PREVIEW" />
-        <entry key="$USER_HOME$/ProjetoOnibusFlinkCEP" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../Desktop/FlinkCEP" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../KafkaOnibusProducer" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../OnibusFlink" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../PlacasFlink" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../ProjetoOnibusFlinkCEP" value="PREVIEW" />
       </map>
     </option>
   </component>
@@ -135,18 +147,18 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="588" y="214" width="847" height="677" key="#Project_Structure/67.27.1853.1053@67.27.1853.1053" timestamp="1581013308535" />
-    <state x="726" y="310" width="524" height="484" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1582128019045">
+    <state x="726" y="310" width="524" height="484" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1582827480760">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="726" y="310" width="524" height="484" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1582128019045" />
+    <state x="726" y="310" width="524" height="484" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1582827480760" />
     <state x="174" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581890378483">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="174" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1299.741@67.27.1299.741" timestamp="1581890378483" />
-    <state x="801" y="253" width="368" height="599" key="#com.intellij.ide.util.MemberChooser" timestamp="1582308451566">
+    <state x="801" y="253" width="368" height="599" key="#com.intellij.ide.util.MemberChooser" timestamp="1582829670762">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="801" y="253" width="368" height="599" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1582308451566" />
+    <state x="801" y="253" width="368" height="599" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1582829670762" />
     <state x="556" y="149" width="865" height="807" key="CommitChangelistDialog2" timestamp="1582211742834">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
