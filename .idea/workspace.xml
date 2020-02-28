@@ -2,35 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f25b65b-a87b-4e34-a71b-eb35f279061c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/Evento1ConditionFunction.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/Evento2ConditionFunction.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/Evento2PatternProcessFunction.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/Evento3ConditionFunction.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/Evento3PatternProcessFunction.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/IsInsideAreaEventProcessFunction.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/MyEventComparator.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/MyPatternProcessFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Evento1PatternProcessFunction.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/MySimpleCondition.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Pipeline.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Pipeline.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/SameRegionFunction.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/teste.sc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/IsInsideAreaEventProcessFunction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/MyEventComparator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/MyPatternProcessFunction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/MySimpleCondition.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/Pipeline.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/Pipeline.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/SameRegionFunction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/teste.sc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Evento3ConditionFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Evento3ConditionFunction.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Evento3PatternProcessFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Evento3PatternProcessFunction.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/projetoplacaseventosflinkcep_2.12-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/projetoplacaseventosflinkcep_2.12-0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileOutputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileOutputs/previous" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileSourceFileInputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileSourceFileInputs/previous" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/compile/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compile/_global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/_global/streams/inc_compile_2.12.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/_global/streams/inc_compile_2.12.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/export" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/packageBin/_global/streams/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/packageBin/_global/streams/inputs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/packageBin/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/packageBin/_global/streams/out" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,11 +88,11 @@
     </option>
     <option name="projectSyncType">
       <map>
-        <entry key="$PROJECT_DIR$/../Desktop/FlinkCEP" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../KafkaOnibusProducer" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../OnibusFlink" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../PlacasFlink" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../ProjetoOnibusFlinkCEP" value="PREVIEW" />
+        <entry key="$USER_HOME$/Desktop/FlinkCEP" value="PREVIEW" />
+        <entry key="$USER_HOME$/KafkaOnibusProducer" value="PREVIEW" />
+        <entry key="$USER_HOME$/OnibusFlink" value="PREVIEW" />
+        <entry key="$USER_HOME$/PlacasFlink" value="PREVIEW" />
+        <entry key="$USER_HOME$/ProjetoOnibusFlinkCEP" value="PREVIEW" />
       </map>
     </option>
   </component>

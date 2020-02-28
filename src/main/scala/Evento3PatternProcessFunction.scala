@@ -10,4 +10,6 @@ class Evento3PatternProcessFunction() extends PatternProcessFunction[(String,Dou
         events.get("evento3").forEach( value => { println("Evento3: "+value._1); out.collect(value._6.toString); })
         
     }
+    
 }
+
