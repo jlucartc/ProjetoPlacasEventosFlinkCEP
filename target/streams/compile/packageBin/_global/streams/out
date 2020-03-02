@@ -2,6 +2,8 @@
 [0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Evento2PatternProcessFunction.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/luca/ProjetoPlacasEventosFlinkCEP/target/scala-2.12/classes/Evento2PatternProcessFunction.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	EventoTestePatternProcessFunction.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/luca/ProjetoPlacasEventosFlinkCEP/target/scala-2.12/classes/EventoTestePatternProcessFunction.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Main$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/luca/ProjetoPlacasEventosFlinkCEP/target/scala-2.12/classes/Main$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	PipelinePostgresQuery.class[0m
@@ -30,6 +32,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/luca/ProjetoPlacasEventosFlinkCEP/target/scala-2.12/classes/Evento1ConditionFunction.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Evento3PatternProcessFunction.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/luca/ProjetoPlacasEventosFlinkCEP/target/scala-2.12/classes/Evento3PatternProcessFunction.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	EventoTesteConditionFunction.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/luca/ProjetoPlacasEventosFlinkCEP/target/scala-2.12/classes/EventoTesteConditionFunction.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	S2TMapFunction.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/luca/ProjetoPlacasEventosFlinkCEP/target/scala-2.12/classes/S2TMapFunction.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	META-INF[0m
