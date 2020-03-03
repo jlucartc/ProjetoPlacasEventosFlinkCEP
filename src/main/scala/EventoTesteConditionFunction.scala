@@ -1,26 +1,15 @@
-import org.apache.flink.cep.pattern.conditions.IterativeCondition
+import org.apache.flink.api.common.state.{ValueState, ValueStateDescriptor}
+import org.apache.flink.cep.pattern.conditions.{IterativeCondition, RichAndCondition, RichIterativeCondition}
 
-class EventoTesteConditionFunction(var counter : Int) extends IterativeCondition[(String,Double,Double,String,Int,Int)] {
+class EventoTesteConditionFunction(var counter : Int) extends RichAndCondition[(String,Double,Double,String,Int,Int)] {
     
-    private var c  : Int = 0
     
-    override def filter(value: (String, Double, Double, String, Int, Int), ctx: IterativeCondition.Context[(String, Double, Double, String, Int, Int)]): Boolean = {
-        
-        if(c == counter-1){
     
-            println("Event: "+value._1.toString+","+value._6.toString)
-            
-            c = 0
-            
-            true
-            
-        }else{
-            
-            c = c + 1
-
-            false
-            
-        }
-        
-    }
+    private var c  : ValueState[Int] = _
+    
+    override def filter(value: (String, Double, Double, String, Int, Int), ctx: IterativeCondition.Context[(String, Double, Double, String, Int, Int)]): Boolean = super.filter(value, ctx)
+    
+    override def getLeft: IterativeCondition[(String, Double, Double, String, Int, Int)] = super.getLeft
+    
+    override def getRight: IterativeCondition[(String, Double, Double, String, Int, Int)] = super.getRight
 }

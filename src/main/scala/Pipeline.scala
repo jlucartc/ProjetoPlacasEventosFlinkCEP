@@ -33,14 +33,14 @@ class Pipeline {
     var stream : DataStream[String] = env.readTextFile("/home/luca/Desktop/input").name("Stream original")
     //var stream : DataStream[String] = env.addSource(new FlinkKafkaConsumer[String]("placas",new SimpleStringSchema(),props))
     
-    var tupleStream = stream.map(new S2TMapFunction())
+    var tupleStream = stream.map(new S2TMapFunction())//.keyBy(new TupleKeySelector())
     var newTupleStream : DataStream[(String,Double,Double,String,Int,Int)] = tupleStream.assignTimestampsAndWatermarks(new PlacasPunctualTimestampAssigner())
-    newTupleStream = newTupleStream.process(new RemoveLateDataProcessFunction).keyBy(new TupleKeySelector())
+    newTupleStream = newTupleStream/*.keyBy(new TupleKeySelector()).process(new PerKeySumProcessFunction())*/.process(new RemoveLateDataProcessFunction)
     
     //val pattern = Pattern.begin[(String,Double,Double,String,Int,Int)]("evento1").where(new Evento1ConditionFunction(intervaloTsegundos,qCarros))
     //val pattern = Pattern.begin[(String,Double,Double,String,Int,Int)]("evento2").where(new Evento2ConditionFunction(maxSpeed))
     //val pattern = Pattern.begin[(String,Double,Double,String,Int,Int)]("evento3").where(new Evento3ConditionFunction(qChange))
-    val pattern = Pattern.begin[(String,Double,Double,String,Int,Int)]("teste").where(new EventoTesteConditionFunction(2)).times(2)
+    val pattern = Pattern.begin[(String,Double,Double,String,Int,Int)]("teste").where(new EventoTesteConditionFunction(2)).times(1)
     
     
     val patternStream = CEP.pattern(newTupleStream,pattern)
@@ -50,10 +50,10 @@ class Pipeline {
     //val result = patternStream.process(new Evento3PatternProcessFunction())
     val result = patternStream.process(new EventoTestePatternProcessFunction())
     
-    
+    newTupleStream.writeAsText("/home/luca/Desktop/output",FileSystem.WriteMode.OVERWRITE)
     //tupleStream.writeAsText("/home/luca/Desktop/input",FileSystem.WriteMode.OVERWRITE)
-    result.writeAsText("/home/luca/Desktop/output",FileSystem.WriteMode.OVERWRITE)
-    
+    //result.writeAsText("/home/luca/Desktop/output",FileSystem.WriteMode.OVERWRITE)
+    env.
     env.execute()
     
 }

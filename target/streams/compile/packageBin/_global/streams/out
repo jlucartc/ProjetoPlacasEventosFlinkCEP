@@ -24,6 +24,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/luca/ProjetoPlacasEventosFlinkCEP/target/scala-2.12/classes/Evento1PatternProcessFunction.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	AcceptAllFunction.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/luca/ProjetoPlacasEventosFlinkCEP/target/scala-2.12/classes/AcceptAllFunction.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	PerKeySumProcessFunction.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/luca/ProjetoPlacasEventosFlinkCEP/target/scala-2.12/classes/PerKeySumProcessFunction.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Pipeline.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/luca/ProjetoPlacasEventosFlinkCEP/target/scala-2.12/classes/Pipeline.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	AsyncPostgresFunction.class[0m
