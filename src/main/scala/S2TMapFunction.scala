@@ -12,6 +12,8 @@ class S2TMapFunction extends MapFunction[String,(String,Double,Double,String,Int
         
         //(tuple(0),coords(0).toDouble,coords(1).toDouble,tuple(3),tuple(4).toInt,tuple(5).toInt)
     
+        println("String: "+value)
+        
         val tuple = value.substring(0,value.length-1).split(',')
         
         val coords = Array(tuple(1),tuple(2))

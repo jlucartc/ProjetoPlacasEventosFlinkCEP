@@ -2,18 +2,149 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f25b65b-a87b-4e34-a71b-eb35f279061c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/PerKeySumProcessFunction.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_annotations_1_10_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_cep_2_12_1_10_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_clients_2_12_1_10_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_connector_kafka_2_12_1_10_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_connector_kafka_base_2_12_1_10_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_core_1_10_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_hadoop_fs_1_10_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_java_1_10_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_jdbc_2_12_1_10_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_metrics_core_1_10_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_optimizer_2_12_1_10_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_queryable_state_client_java_1_10_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_runtime_2_12_1_10_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_runtime_web_2_12_1_10_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_scala_2_12_1_10_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_shaded_asm_7_7_1_9_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_shaded_guava_18_0_9_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_shaded_jackson_2_10_1_9_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_shaded_netty_4_1_39_Final_9_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_streaming_java_2_12_1_10_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_streaming_scala_2_12_1_10_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_table_api_java_1_10_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_table_api_java_bridge_2_12_1_10_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_table_api_scala_2_12_1_10_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_table_api_scala_bridge_2_12_1_10_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_table_common_1_10_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_table_planner_blink_2_12_1_10_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_table_runtime_blink_2_12_1_10_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_force_shading_1_10_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_javassist_javassist_3_24_0_GA_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/EventoTesteIterativeCondition.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_annotations_1_9_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_cep_2_12_1_9_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_clients_2_12_1_9_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_connector_kafka_2_12_1_9_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_connector_kafka_base_2_12_1_9_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_core_1_9_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_hadoop_fs_1_9_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_java_1_9_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_jdbc_2_12_1_9_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_metrics_core_1_9_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_optimizer_2_12_1_9_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_queryable_state_client_java_1_9_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_runtime_2_12_1_9_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_runtime_web_2_12_1_9_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_scala_2_12_1_9_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_shaded_asm_6_6_2_1_7_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_shaded_guava_18_0_7_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_shaded_jackson_2_9_8_7_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_shaded_netty_4_1_32_Final_7_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_streaming_java_2_12_1_9_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_streaming_scala_2_12_1_9_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_table_api_java_1_9_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_table_api_java_bridge_2_12_1_9_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_table_api_scala_2_12_1_9_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_table_api_scala_bridge_2_12_1_9_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_table_common_1_9_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_table_planner_blink_2_12_1_9_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_table_runtime_blink_2_12_1_9_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_force_shading_1_9_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_javassist_javassist_3_21_0_GA_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/ProjetoPlacasEventosFlinkCEP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/ProjetoPlacasEventosFlinkCEP.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/EventoTesteConditionFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/EventoTesteConditionFunction.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$044c5643d66e9d964dee$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$044c5643d66e9d964dee.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$044c5643d66e9d964dee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$12631a5b91bf9896e442$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$12631a5b91bf9896e442.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$12631a5b91bf9896e442.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$44d05bebdce5945091b6$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$44d05bebdce5945091b6.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$44d05bebdce5945091b6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$4e45cdc669789c97ac5f$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$4e45cdc669789c97ac5f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$4e45cdc669789c97ac5f.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$5e6d1e46b4c0afb454ae$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$5e6d1e46b4c0afb454ae.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$5e6d1e46b4c0afb454ae.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$635f354a2ef882a736e3$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$635f354a2ef882a736e3.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$635f354a2ef882a736e3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$6c54117a511cafd595a9$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$6c54117a511cafd595a9.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$6c54117a511cafd595a9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$82a6e09a924dc0e09dab$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$82a6e09a924dc0e09dab.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$82a6e09a924dc0e09dab.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$8f23f9b06a7e37255692$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$8f23f9b06a7e37255692.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$8f23f9b06a7e37255692.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$cfefe653f09873048919$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$cfefe653f09873048919.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$cfefe653f09873048919.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$dc0d9438bafdcd2e2815$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$dc0d9438bafdcd2e2815.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$dc0d9438bafdcd2e2815.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$de44c8b4039d0e0a431b$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$de44c8b4039d0e0a431b.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$de44c8b4039d0e0a431b.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$f0fed7310a333134116f$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$f0fed7310a333134116f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$f0fed7310a333134116f.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$f6194e0393805732990f$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$f6194e0393805732990f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$f6194e0393805732990f.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/AcceptAllFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/AcceptAllFunction.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/EventoTesteConditionFunction.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/EventoTestePatternProcessFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/EventoTestePatternProcessFunction.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/Pipeline.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Pipeline.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/S2TMapFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/S2TMapFunction.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/AcceptAllFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/AcceptAllFunction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/EventoTesteConditionFunction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/EventoTestePatternProcessFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/EventoTestePatternProcessFunction.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/Pipeline.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/Pipeline.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/S2TMapFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/S2TMapFunction.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/projetoplacaseventosflinkcep_2.12-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/projetoplacaseventosflinkcep_2.12-0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/update/update_cache_2.12/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/update/update_cache_2.12/inputs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/update/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/update/update_cache_2.12/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/_global/checkBuildSources/_global/inputFileStamps/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/_global/checkBuildSources/_global/inputFileStamps/previous" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/_global/csrLogger/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/_global/csrLogger/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/input_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/input_dsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/updateClassifiers/_global/streams/update_cache_2.12/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/updateClassifiers/_global/streams/update_cache_2.12/inputs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/updateClassifiers/_global/streams/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/updateClassifiers/_global/streams/update_cache_2.12/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileBinaryFileInputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileBinaryFileInputs/previous" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileOutputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileOutputs/previous" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileSourceFileInputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileSourceFileInputs/previous" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/dependencyClasspathFiles/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/dependencyClasspathFiles/previous" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/_global/streams/inc_compile_2.12.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/_global/streams/inc_compile_2.12.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/export" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/dependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/dependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/managedClasspath/_global/streams/export" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/packageBin/_global/streams/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/packageBin/_global/streams/inputs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/packageBin/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/packageBin/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/runtime/dependencyClasspathAsJars/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/runtime/dependencyClasspathAsJars/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/runtime/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/runtime/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/runtime/fullClasspathAsJars/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/runtime/fullClasspathAsJars/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/runtime/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/runtime/managedClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/managedClasspath/_global/streams/export" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,8 +216,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="3163891084914" />
-        <entry key="$PROJECT_DIR$/build.sbt" value="2765137254" />
+        <entry key="$PROJECT_DIR$/build.sbt" value="1540405476" />
         <entry key="$PROJECT_DIR$/project/build.properties" value="1244562550" />
       </map>
     </option>
@@ -138,10 +268,10 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="174" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1299.741@67.27.1299.741" timestamp="1581890378483" />
-    <state x="801" y="253" width="368" height="599" key="#com.intellij.ide.util.MemberChooser" timestamp="1583262348018">
+    <state x="801" y="253" width="368" height="599" key="#com.intellij.ide.util.MemberChooser" timestamp="1583335589757">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="801" y="253" width="368" height="599" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1583262348018" />
+    <state x="801" y="253" width="368" height="599" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1583335589757" />
     <state x="556" y="149" width="865" height="807" key="CommitChangelistDialog2" timestamp="1582211742834">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
