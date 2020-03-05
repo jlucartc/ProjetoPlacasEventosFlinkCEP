@@ -9,9 +9,7 @@ class RemoveLateDataProcessFunction extends ProcessFunction[(String,Double, Doub
     
         val watermark = ctx.timerService().currentWatermark()
         
-        //println((ctx.timestamp() < watermark).toString)
         val t = new Timestamp(ctx.timestamp())
-        //println(t.toString)
         
         if(ctx.timestamp() < watermark){
             

@@ -1,10 +1,11 @@
 import org.apache.flink.api.java.functions.KeySelector
 
-class TupleKeySelector() extends KeySelector[(String,Double,Double,String,Int,Int),Int]{
+class TupleKeySelector() extends KeySelector[(String,Double,Double,Long,Int,Int),Int]{
     
-    override def getKey(value: (String, Double, Double, String, Int, Int)): Int = {
+    override def getKey(value: (String, Double, Double,Long, Int, Int)): Int = {
     
-        value._6
+        //value._5
+        1
         
     }
 }

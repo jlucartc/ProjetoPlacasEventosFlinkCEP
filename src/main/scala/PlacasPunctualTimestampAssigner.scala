@@ -4,13 +4,13 @@ import java.text.SimpleDateFormat
 import org.apache.flink.streaming.api.functions.AssignerWithPunctuatedWatermarks
 import org.apache.flink.streaming.api.watermark.Watermark
 
-class PlacasPunctualTimestampAssigner extends AssignerWithPunctuatedWatermarks[(String,Double,Double,String,Int,Int)]{
+class PlacasPunctualTimestampAssigner extends AssignerWithPunctuatedWatermarks[(String,Double,Double,Long,Int,Int)]{
     
     var counter : Int = 0
     var eventsUntilNextWatermark : Int = 0
     var lastTimestamp : Long = _
     
-    override def checkAndGetNextWatermark(lastElement: (String, Double, Double, String, Int, Int), extractedTimestamp: Long): Watermark = {
+    override def checkAndGetNextWatermark(lastElement: (String, Double, Double, Long, Int, Int), extractedTimestamp: Long): Watermark = {
     
         if(counter == eventsUntilNextWatermark){
             
@@ -28,17 +28,14 @@ class PlacasPunctualTimestampAssigner extends AssignerWithPunctuatedWatermarks[(
     
     }
     
-    override def extractTimestamp(element: (String,Double, Double,String,Int,Int), previousElementTimestamp: Long): Long = {
+    override def extractTimestamp(element: (String,Double, Double,Long,Int,Int), previousElementTimestamp: Long): Long = {
     
-    
-        val formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
-        val date = formatter.parse(element._4)
-        val timestampAtual = new Timestamp(date.getTime).getTime
-        lastTimestamp = Math.max(lastTimestamp,timestampAtual)
+        
+        lastTimestamp = Math.max(lastTimestamp,element._4)
         
         //counter = counter + 1
         
-        timestampAtual
+        element._4
     
     }
 }
