@@ -1,5 +1,6 @@
+package TimestampAssigners
+
 import java.sql.Timestamp
-import java.text.SimpleDateFormat
 
 import org.apache.flink.streaming.api.functions.AssignerWithPunctuatedWatermarks
 import org.apache.flink.streaming.api.watermark.Watermark

@@ -1,6 +1,6 @@
-import org.apache.flink.api.common.state.{ValueState, ValueStateDescriptor}
-import org.apache.flink.cep.pattern.conditions.{IterativeCondition, RichAndCondition, RichIterativeCondition}
-import org.apache.flink.streaming.api.functions.ProcessFunction
+package IterativeConditions
+
+import org.apache.flink.cep.pattern.conditions.IterativeCondition
 
 class EventoTesteIterativeCondition() extends IterativeCondition[(String,Double,Double,String,Int,Int)] {
     

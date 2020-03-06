@@ -60,7 +60,7 @@ class PipelinePostgresQuery() {
     
         //var asyncStream : DataStream[String] = asyncEnv.readTextFile("/home/luca/Desktop/inputData").name("Async stream")
     
-        //var afterAsyncFunctionStream : DataStream[String] = AsyncDataStream.unorderedWait(asyncStream,new AsyncPostgresFunction(), 500, TimeUnit.MILLISECONDS, 100)
+        //var afterAsyncFunctionStream : DataStream[String] = AsyncDataStream.unorderedWait(asyncStream,new Functions.AsyncPostgresFunction(), 500, TimeUnit.MILLISECONDS, 100)
     
         //afterAsyncFunctionStream.writeAsText("/home/luca/Desktop/asyncIOoutput",FileSystem.WriteMode.OVERWRITE)
     
@@ -84,14 +84,14 @@ class PipelinePostgresQuery() {
     
     //var stream : DataStream[String] = env.readTextFile("/home/luca/Desktop/inputData").name("Stream original")
     var stream : DataStream[String] = env.addSource(new FlinkKafkaConsumer[String]("placas",new SimpleStringSchema(),props))
-    var tupleStream  : DataStream[(String,String,Double,Double)] = stream.map(new S2TMapFunction())
+    var tupleStream  : DataStream[(String,String,Double,Double)] = stream.map(new Functions.S2TMapFunction())
     
-    var earlyDataStream = tupleStream.assignTimestampsAndWatermarks(new PlacasPeriodicTimestampAssigner())
-    .process(new RemoveLateDataProcessFunction())
+    var earlyDataStream = tupleStream.assignTimestampsAndWatermarks(new TimestampAssigners.PlacasPeriodicTimestampAssigner())
+    .process(new ProcessFunctions.RemoveLateDataProcessFunction())
     
     /* A partir daqui, haverá um pipeline para cada tipo de evento */
     
-    var afterAsyncFunctionStream : DataStream[String] = AsyncDataStream.unorderedWait(earlyDataStream,new AsyncPostgresFunction(), 10000, TimeUnit.MILLISECONDS, 500)
+    var afterAsyncFunctionStream : DataStream[String] = AsyncDataStream.unorderedWait(earlyDataStream,new Functions.AsyncPostgresFunction(), 10000, TimeUnit.MILLISECONDS, 500)
     
     //stream.writeAsText("/home/luca/Desktop/asyncIOoutput",FileSystem.WriteMode.OVERWRITE)
     

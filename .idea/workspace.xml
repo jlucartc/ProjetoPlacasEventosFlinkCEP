@@ -2,30 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f25b65b-a87b-4e34-a71b-eb35f279061c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/EventKeySelector.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/FollowDetectorProcessFunction.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/IterativeConditions/Evento2ConditionFunction.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Evento1ConditionFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Evento1ConditionFunction.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Evento1PatternProcessFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Evento1PatternProcessFunction.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/AcceptAllFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/IterativeConditions/AcceptAllFunction.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/AsyncPostgresFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Functions/AsyncPostgresFunction.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/DoNothingMapFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Functions/DoNothingMapFunction.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/EventKeySelector.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/KeySelectors/EventKeySelector.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Evento1ConditionFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/IterativeConditions/Evento1ConditionFunction.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Evento1PatternProcessFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/PatternProcessFunctions/Evento1PatternProcessFunction.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Evento2ConditionFunction.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Evento2PatternProcessFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/PatternProcessFunctions/Evento2PatternProcessFunction.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Evento3ConditionFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/IterativeConditions/Evento3ConditionFunction.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Evento3PatternProcessFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/PatternProcessFunctions/Evento3PatternProcessFunction.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/EventoTesteIterativeCondition.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/IterativeConditions/EventoTesteIterativeCondition.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/EventoTestePatternProcessFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/PatternProcessFunctions/EventoTestePatternProcessFunction.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/FollowDetectorProcessFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/ProcessFunctions/FollowDetectorProcessFunction.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/PerKeySumProcessFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/ProcessFunctions/PerKeySumProcessFunction.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/Pipeline.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Pipeline.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/PlacasPunctualTimestampAssigner.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/PlacasPunctualTimestampAssigner.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/RemoveLateDataProcessFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/RemoveLateDataProcessFunction.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/S2TMapFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/S2TMapFunction.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/TupleKeySelector.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/TupleKeySelector.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/Evento1ConditionFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/Evento1ConditionFunction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/Evento1PatternProcessFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/Evento1PatternProcessFunction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/Pipeline.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/Pipeline.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/PlacasPunctualTimestampAssigner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/PlacasPunctualTimestampAssigner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/RemoveLateDataProcessFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/RemoveLateDataProcessFunction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/S2TMapFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/S2TMapFunction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/TupleKeySelector.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/TupleKeySelector.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/projetoplacaseventosflinkcep_2.12-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/projetoplacaseventosflinkcep_2.12-0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileOutputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileOutputs/previous" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileSourceFileInputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileSourceFileInputs/previous" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/_global/streams/inc_compile_2.12.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/_global/streams/inc_compile_2.12.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/packageBin/_global/streams/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/packageBin/_global/streams/inputs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/packageBin/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/packageBin/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/PipelinePostgresQuery.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/PipelinePostgresQuery.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/PlacasPeriodicTimestampAssigner.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/TimestampAssigners/PlacasPeriodicTimestampAssigner.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/PlacasPunctualTimestampAssigner.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/TimestampAssigners/PlacasPunctualTimestampAssigner.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/RemoveLateDataProcessFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/ProcessFunctions/RemoveLateDataProcessFunction.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/S2TMapFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Functions/S2TMapFunction.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/TupleKeySelector.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/KeySelectors/TupleKeySelector.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +68,15 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Functions" />
+      <recent name="TimestampAssigners" />
+      <recent name="ProcessFunctions" />
+      <recent name="KeySelectors" />
+      <recent name="IterativeConditions" />
+    </key>
   </component>
   <component name="SbtLocalSettings">
     <option name="availableProjects">
@@ -154,6 +162,14 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="801" y="253" width="368" height="599" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1583425507969" />
+    <state x="726" y="336" width="524" height="444" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1583494059240">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="726" y="336" width="524" height="444" key="#com.intellij.ide.util.PackageChooserDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1583494059240" />
+    <state x="746" y="413" width="642" height="290" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1583494060026">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="746" y="413" width="642" height="290" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/67.27.1853.1053@67.27.1853.1053" timestamp="1583494060026" />
     <state x="556" y="149" width="865" height="807" key="CommitChangelistDialog2" timestamp="1583417915864">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>

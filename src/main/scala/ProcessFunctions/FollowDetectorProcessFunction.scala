@@ -1,5 +1,7 @@
+package ProcessFunctions
+
 import org.apache.flink.api.common.state.{MapState, MapStateDescriptor}
-import org.apache.flink.streaming.api.functions.{KeyedProcessFunction, ProcessFunction}
+import org.apache.flink.streaming.api.functions.ProcessFunction
 import org.apache.flink.util.Collector
 
 class FollowDetectorProcessFunction(timeLimitSeconds : Double) extends ProcessFunction[(String,Double,Double,Long,Int,Int),(Int,Int,String,String,Long)]{

@@ -1,3 +1,5 @@
+package IterativeConditions
+
 import org.apache.flink.cep.pattern.conditions.IterativeCondition
 
 class AcceptAllFunction extends IterativeCondition[(String,Double,Double,String,Int,Int)]{

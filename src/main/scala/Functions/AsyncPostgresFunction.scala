@@ -1,12 +1,13 @@
-import com.github.mauricio.async.db.{Connection, QueryResult, ResultSet, RowData}
+package Functions
+
 import com.github.mauricio.async.db.postgresql.PostgreSQLConnection
 import com.github.mauricio.async.db.postgresql.util.URLParser
-import org.apache.flink.streaming.api.scala.async.{AsyncFunction, ResultFuture}
-import org.apache.flink.api.scala._
+import com.github.mauricio.async.db.{Connection, QueryResult, RowData}
 import org.apache.flink.runtime.concurrent.Executors
+import org.apache.flink.streaming.api.scala.async.{AsyncFunction, ResultFuture}
 
-import scala.concurrent.{Await, ExecutionContext, Future}
 import scala.concurrent.duration.DurationInt
+import scala.concurrent.{Await, ExecutionContext, Future}
 
 class AsyncPostgresFunction extends AsyncFunction[(String,String,Double,Double),String] {
     

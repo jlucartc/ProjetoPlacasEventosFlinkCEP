@@ -1,3 +1,5 @@
+package ProcessFunctions
+
 import org.apache.flink.api.common.state.{ValueState, ValueStateDescriptor}
 import org.apache.flink.streaming.api.functions.ProcessFunction
 import org.apache.flink.util.Collector

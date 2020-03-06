@@ -1,3 +1,5 @@
+package PatternProcessFunctions
+
 import java.util
 
 import org.apache.flink.cep.functions.PatternProcessFunction

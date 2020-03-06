@@ -1,5 +1,11 @@
 import java.util.Properties
 
+import Functions.S2TMapFunction
+import IterativeConditions.Evento1ConditionFunction
+import KeySelectors.{EventKeySelector, TupleKeySelector}
+import PatternProcessFunctions.Evento1PatternProcessFunction
+import ProcessFunctions.FollowDetectorProcessFunction
+import TimestampAssigners.PlacasPunctualTimestampAssigner
 import org.apache.flink.api.common.serialization.SimpleStringSchema
 import org.apache.flink.streaming.api.{TimeCharacteristic, scala}
 import org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumer
@@ -42,15 +48,15 @@ class Pipeline {
     var newTupleStream = tupleStream.process(new FollowDetectorProcessFunction(120)).keyBy(new EventKeySelector())
     
     val pattern = Pattern.begin[(Int,Int,String,String,Long)]("evento1").where(new Evento1ConditionFunction()).times(2).within(Time.seconds(421))
-    //val pattern = Pattern.begin[(String,Double,Double,String,Int,Int)]("evento2").where(new Evento2ConditionFunction(maxSpeed))
-    //val pattern = Pattern.begin[(String,Double,Double,String,Int,Int)]("evento3").where(new Evento3ConditionFunction(qChange))
+    //val pattern = Pattern.begin[(String,Double,Double,String,Int,Int)]("evento2").where(new IterativeConditions.Evento2ConditionFunction(maxSpeed))
+    //val pattern = Pattern.begin[(String,Double,Double,String,Int,Int)]("evento3").where(new IterativeConditions.Evento3ConditionFunction(qChange))
     
     
     val patternStream = CEP.pattern(newTupleStream,pattern)
     
     val result = patternStream.process(new Evento1PatternProcessFunction())
-    //val result = patternStream.process(new Evento2PatternProcessFunction())
-    //val result = patternStream.process(new Evento3PatternProcessFunction())
+    //val result = patternStream.process(new PatternProcessFunctions.Evento2PatternProcessFunction())
+    //val result = patternStream.process(new PatternProcessFunctions.Evento3PatternProcessFunction())
     
     //newTupleStream.writeAsText("/home/luca/Desktop/output",FileSystem.WriteMode.OVERWRITE)
     //tupleStream.writeAsText("/home/luca/Desktop/input",FileSystem.WriteMode.OVERWRITE)
