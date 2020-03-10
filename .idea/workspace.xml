@@ -2,29 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f25b65b-a87b-4e34-a71b-eb35f279061c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/IterativeConditions/Evento2ConditionFunction.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/AcceptAllFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/IterativeConditions/AcceptAllFunction.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/AsyncPostgresFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Functions/AsyncPostgresFunction.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/DoNothingMapFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Functions/DoNothingMapFunction.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/EventKeySelector.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/KeySelectors/EventKeySelector.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Evento1ConditionFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/IterativeConditions/Evento1ConditionFunction.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Evento1PatternProcessFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/PatternProcessFunctions/Evento1PatternProcessFunction.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Evento2ConditionFunction.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Evento2PatternProcessFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/PatternProcessFunctions/Evento2PatternProcessFunction.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Evento3ConditionFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/IterativeConditions/Evento3ConditionFunction.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Evento3PatternProcessFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/PatternProcessFunctions/Evento3PatternProcessFunction.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/EventoTesteIterativeCondition.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/IterativeConditions/EventoTesteIterativeCondition.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/EventoTestePatternProcessFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/PatternProcessFunctions/EventoTestePatternProcessFunction.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/FollowDetectorProcessFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/ProcessFunctions/FollowDetectorProcessFunction.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/PerKeySumProcessFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/ProcessFunctions/PerKeySumProcessFunction.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/_global/update/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/_global/update/_global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/Pipeline.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Pipeline.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/PipelinePostgresQuery.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/PipelinePostgresQuery.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/PlacasPeriodicTimestampAssigner.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/TimestampAssigners/PlacasPeriodicTimestampAssigner.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/PlacasPunctualTimestampAssigner.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/TimestampAssigners/PlacasPunctualTimestampAssigner.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/RemoveLateDataProcessFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/ProcessFunctions/RemoveLateDataProcessFunction.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/S2TMapFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Functions/S2TMapFunction.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/TupleKeySelector.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/KeySelectors/TupleKeySelector.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/AcceptAllFunction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/AsyncPostgresFunction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/DoNothingMapFunction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/EventKeySelector.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/Evento1ConditionFunction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/Evento1PatternProcessFunction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/Evento2ConditionFunction$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/Evento2ConditionFunction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/Evento2PatternProcessFunction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/Evento3ConditionFunction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/Evento3PatternProcessFunction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/EventoTesteIterativeCondition.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/EventoTestePatternProcessFunction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/FollowDetectorProcessFunction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/PerKeySumProcessFunction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/Pipeline.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/Pipeline.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/PlacasPeriodicTimestampAssigner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/PlacasPunctualTimestampAssigner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/RemoveLateDataProcessFunction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/S2TMapFunction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/TupleKeySelector.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/projetoplacaseventosflinkcep_2.12-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/projetoplacaseventosflinkcep_2.12-0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileOutputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileOutputs/previous" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileSourceFileInputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileSourceFileInputs/previous" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/compile/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compile/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/_global/streams/inc_compile_2.12.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/_global/streams/inc_compile_2.12.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/packageBin/_global/streams/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/packageBin/_global/streams/inputs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/packageBin/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/packageBin/_global/streams/out" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
