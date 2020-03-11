@@ -1,0 +1,8 @@
+    val parallelism = 1
+    val checkPointingTimeInterval = 1000
+    val restartAttempts = 1
+    val timeBeforeRetry = 10000
+    val inputFileURL1 = "/home/luca/Desktop/input"
+    val outputFileURL1 = "/home/luca/Desktop/output"
+    val outputFileURL2 = "/home/luca/Desktop/output2"
+    val kafkaConsumerTopicName = "placas"

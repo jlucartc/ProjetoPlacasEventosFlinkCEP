@@ -29,12 +29,20 @@ class Pipeline {
     val qChange = 25
     val timeLimitSeconds = 120
     val seconds = 421
+    val parallelism = 1
+    val checkPointingTimeInterval = 1000
+    val restartAttempts = 1
+    val timeBeforeRetry = 10000
+    val inputFileURL1 = "/home/luca/Desktop/input"
+    val outputFileURL1 = "/home/luca/Desktop/output"
+    val outputFileURL2 = "/home/luca/Desktop/output2"
+    val kafkaConsumerTopicName = "placas"
     
     var env = StreamExecutionEnvironment.getExecutionEnvironment
     env.setStreamTimeCharacteristic(TimeCharacteristic.EventTime)
-    env.setParallelism(1)
-    env.enableCheckpointing(1000)
-    env.setRestartStrategy(RestartStrategies.fixedDelayRestart(1,org.apache.flink.api.common.time.Time.of(10, TimeUnit.SECONDS)))
+    env.setParallelism(parallelism)
+    env.enableCheckpointing(checkPointingTimeInterval)
+    env.setRestartStrategy(RestartStrategies.fixedDelayRestart(restartAttempts,org.apache.flink.api.common.time.Time.of(timeBeforeRetry, TimeUnit.MILLISECONDS)))
     var props : Properties = new Properties()
     
     props.setProperty("bootstrap.servers","localhost:32768")
@@ -43,9 +51,9 @@ class Pipeline {
     props.setProperty("auto.offset.reset", "earliest")
     props.setProperty("enable.auto.commit","false")
     
-    var stream : DataStream[String] = env.readTextFile("/home/luca/Desktop/input").uid("TextFileInput").name("Stream original")
+    var stream : DataStream[String] = env.readTextFile(inputFileURL1).uid("TextFileInput").name("Stream original")
     
-    //var stream : DataStream[String] = env.addSource(new FlinkKafkaConsumer[String]("placas",new SimpleStringSchema(),props)).uid("KafkaConsumerInput")
+    //var stream : DataStream[String] = env.addSource(new FlinkKafkaConsumer[String](kafkaConsumerTopicName,new SimpleStringSchema(),props)).uid("KafkaConsumerInput")
     
     var tupleStream = stream
         .map(new S2TMapFunction()).uid("S2TMapFunction").name("S2TMapFunction")
@@ -70,9 +78,8 @@ class Pipeline {
     //val result = patternStream.process(new PatternProcessFunctions.Evento2PatternProcessFunction())
     //val result = patternStream.process(new PatternProcessFunctions.Evento3PatternProcessFunction())
     
-    stream.writeAsText("/home/luca/Desktop/output2",FileSystem.WriteMode.OVERWRITE).name("Storage")
-    //tupleStream.writeAsText("/home/luca/Desktop/input",FileSystem.WriteMode.OVERWRITE)
-    result.writeAsText("/home/luca/Desktop/output",FileSystem.WriteMode.OVERWRITE).uid("WriteResultToTextFile").name("OutputFile")
+    stream.writeAsText(outputFileURL2,FileSystem.WriteMode.OVERWRITE).name("Storage")
+    result.writeAsText(outputFileURL1,FileSystem.WriteMode.OVERWRITE).uid("WriteResultToTextFile").name("OutputFile")
     
     println("Execution plan: \n\n"+env.getExecutionPlan)
     
